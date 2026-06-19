@@ -1,20 +1,3 @@
-#!/usr/bin/env python3
-"""
-Plain-Vanilla RAG System — Defence Procurement Policy QA
-=========================================================
-Stack:
-  Retrieval  : TF-IDF (sklearn) — no model download, exact term matching
-  Generation : Google Gemini 1.5 Flash via google-genai SDK
-  Storage    : pickle (index file on disk)
-
-Usage:
-  export GOOGLE_API_KEY="your_key_here"
-
-  python rag.py ingest --corpus_dir ./corpus
-  python rag.py query  --question "What is the standstill period for contracts above £1 million?"
-  python rag.py eval   --questions_file ./questions.txt
-"""
-
 import os
 import sys
 import pickle
